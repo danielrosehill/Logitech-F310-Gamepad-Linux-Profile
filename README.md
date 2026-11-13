@@ -69,3 +69,14 @@ without pad support.
 
 Public plugin [`input-device-mapper`](https://github.com/danielrosehill/Input-Device-Mapper-Plugin): `idmap.py info 046d:c21d`,
 then `idmap.py press 046d:c21d --label <button>` once per button.
+
+## SDL GameController mapping (Linux)
+
+```
+030000006d0400001dc2000014400000,Logitech F310 Gamepad (XInput),platform:Linux,a:b0,b:b1,x:b2,y:b3,leftshoulder:b4,rightshoulder:b5,back:b6,start:b7,guide:b8,leftstick:b9,rightstick:b10,lefttrigger:a2,righttrigger:a5,leftx:a0,lefty:a1,rightx:a3,righty:a4,dpup:h0.1,dpright:h0.2,dpdown:h0.4,dpleft:h0.8,
+```
+
+Derived, not read from SDL: the GUID is SDL's Linux layout (bus `0003`, vendor `046d`, product `c21d`, version `4014`,
+each little-endian), and `bN`/`aN` follow SDL's evdev enumeration (buttons in ascending code order 304…318, axes
+`ABS_X, ABS_Y, ABS_Z, ABS_RX, ABS_RY, ABS_RZ`). Buttons, triggers and D-pad match the press-verified table; the stick
+axes were not press-tested. SDL already ships this pad in its built-in database, so this line is for reference.
