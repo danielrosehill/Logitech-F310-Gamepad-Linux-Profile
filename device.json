@@ -1,0 +1,97 @@
+{
+  "captured": "2026-11-13",
+  "host": "daniellaptop",
+  "product": "Logitech Gamepad F310",
+  "mode": "XInput (rear switch X)",
+  "usb": {
+    "vendor": "046d",
+    "product": "c21d"
+  },
+  "usb_d_mode_product": "c216",
+  "udev_serial": "Logitech_Gamepad_F310_<serial>",
+  "driver": "xpad",
+  "by_id": "/dev/input/by-id/usb-Logitech_Gamepad_F310_<serial>-event-joystick",
+  "buttons": {
+    "A": {
+      "evdev": 304,
+      "browser_index": 0
+    },
+    "B": {
+      "evdev": 305,
+      "browser_index": 1
+    },
+    "X": {
+      "evdev": 307,
+      "browser_index": 2
+    },
+    "Y": {
+      "evdev": 308,
+      "browser_index": 3
+    },
+    "LB": {
+      "evdev": 310,
+      "browser_index": 4
+    },
+    "RB": {
+      "evdev": 311,
+      "browser_index": 5
+    },
+    "LT": {
+      "evdev_abs": "ABS_Z",
+      "browser_index": 6
+    },
+    "RT": {
+      "evdev_abs": "ABS_RZ",
+      "browser_index": 7
+    },
+    "Back": {
+      "evdev": 314,
+      "browser_index": 8
+    },
+    "Start": {
+      "evdev": 315,
+      "browser_index": 9
+    },
+    "LStick": {
+      "evdev": 317,
+      "browser_index": 10
+    },
+    "RStick": {
+      "evdev": 318,
+      "browser_index": 11
+    },
+    "Guide": {
+      "evdev": 316,
+      "browser_index": 16
+    },
+    "DpadUp": {
+      "evdev_abs": "ABS_HAT0Y",
+      "value": -1,
+      "browser_index": 12
+    },
+    "DpadDown": {
+      "evdev_abs": "ABS_HAT0Y",
+      "value": 1,
+      "browser_index": 13
+    },
+    "DpadLeft": {
+      "evdev_abs": "ABS_HAT0X",
+      "value": -1,
+      "browser_index": 14
+    },
+    "DpadRight": {
+      "evdev_abs": "ABS_HAT0X",
+      "value": 1,
+      "browser_index": 15
+    }
+  },
+  "physical_label_mapping_verified": true,
+  "asr_recorder_target": {
+    "record": 2,
+    "save": 1,
+    "retake": 3,
+    "skip": 0
+  },
+  "verified": "2026-11-13, one press per button with input-device-mapper idmap.py press; all 17 inputs matched the table",
+  "not_captured": "Stick movement (ABS_X/ABS_Y left, ABS_RX/ABS_RY right, -32768..32767) was not press-mapped; not needed for button bindings. Stick clicks are mapped."
+}
