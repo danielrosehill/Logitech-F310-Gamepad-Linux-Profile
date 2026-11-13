@@ -90,7 +90,8 @@
     "record": 2,
     "save": 1,
     "retake": 3,
-    "skip": 0
+    "skip": 0,
+    "focus": 16
   },
   "verified": "2026-11-13, one press per button with input-device-mapper idmap.py press; all 17 inputs matched the table",
   "not_captured": "Stick movement (ABS_X/ABS_Y left, ABS_RX/ABS_RY right, -32768..32767) was not press-mapped; not needed for button bindings. Stick clicks are mapped."

@@ -46,7 +46,12 @@ browser index column is the W3C standard-mapping prediction; it has not been rea
 | X | Record / stop (`record`) | 2 |
 | B | Save · next (`save`) | 1 |
 | Y | Retake / restart (`retake`) | 3 |
-| A | Skip (`skip`) | 0 |
+| A | Skip, which is Skip all while the recorder's `skipDefault` is "all" (`skip`) | 0 |
+| Logitech (Guide, round) | Focus mode on/off: full screen, keys held (`focus`), added in release 448 | 16 |
+
+The button printed **MODE** is handled inside the pad (it swaps the left stick and the D-pad and lights its LED) and
+sends no event, so it cannot be bound. A gamepad press is not a browser user gesture, so the page's own full-screen request
+is refused for it; desktop shell 1.10 makes the window full screen itself (ASR-Training commit `4589cb0`).
 
 The rest are unassigned for now. The recorder already reads gamepads natively (Gamepad API polling, release 195), and
 pad bindings are stored separately from keyboard bindings, so the keyboard shortcuts are unaffected by plugging or
