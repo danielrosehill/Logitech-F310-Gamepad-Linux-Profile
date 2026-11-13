@@ -85,3 +85,11 @@ Derived, not read from SDL: the GUID is SDL's Linux layout (bus `0003`, vendor `
 each little-endian), and `bN`/`aN` follow SDL's evdev enumeration (buttons in ascending code order 304…318, axes
 `ABS_X, ABS_Y, ABS_Z, ABS_RX, ABS_RY, ABS_RZ`). Buttons, triggers and D-pad match the press-verified table; the stick
 axes were not press-tested. SDL already ships this pad in its built-in database, so this line is for reference.
+
+## Example: the F310 driving an ASR recording app
+
+Once the buttons are mapped, the pad can run a whole app. This is the Layouts page of Daniel's recording app for ASR
+fine-tuning (recorder release 449, 2026-11-13): reading sentences aloud, the right thumb records, saves, retakes and skips,
+and the shoulders and D-pad run the session.
+
+![F310 layout in the ASR recording app](examples/asr-recorder-layout.png)
